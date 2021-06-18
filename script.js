@@ -37,7 +37,7 @@ let digitalClock = () => {
 
     document.getElementById("day").innerHTML = weekDays[day];
     document.getElementById("date1").innerHTML = date1;
-    document.getElementById("month").innerHTML = monthDays[day];
+    document.getElementById("month").innerHTML = monthDays[month];
     document.getElementById("year").innerHTML = year;
     
     setTimeout(digitalClock, 500);
