@@ -27,6 +27,7 @@ h1{
     display: flex;
     margin-top: 20px ;
     margin-left: 75px;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     background: url(clock_img.png);
@@ -102,6 +103,7 @@ h1{
 /* Digital Clock */
 
 .Digital ,.DayAndDate{
+  flex-wrap: wrap;
   display: flex;
   justify-content: center;
   align-items: center;

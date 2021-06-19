@@ -18,9 +18,10 @@ let digitalClock = () => {
     let day_night = "AM";
     if (hours >= 12) {
       day_night = "PM";
-      hours = hours - 12;
-      // hours = hours % 12 || 12;
+       
     }
+    if(hours > 12 && hours < 24) hours = hours - 12;
+    if(hours==24) {hours-=24; day_night="AM";}
     if (seconds < 10) {
       seconds = "0" + seconds;
     }
